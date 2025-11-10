@@ -38,6 +38,7 @@
   font: var(--paragraph-md);
   list-style: none;
   background-color: var(--bg-secondary-color);
+  border-radius: 1.2rem;
   flex-wrap: nowrap;
 
   & input[type="checkbox"] {
@@ -58,8 +59,6 @@
   }
 
   & img {
-    width: 32px;
-    height: 32px;
     flex-shrink: 0;
   }
 
