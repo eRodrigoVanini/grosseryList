@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 7rem;
+}
+
+header h1 {
+  font: var(--title-md);
+}
+
+header a {
+  font: var(--link-md);
+  color: var(--color-brand);
+
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+@media (min-width: 80em) {
+  header h1 {
+    font: var(--title-lg);
+  }
+}

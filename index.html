@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Grocery List</title>
   </head>
   <body>
+    <header class="container">
+      <nav>
+        <a href="#">
+          <img src="./assets/icons/arrow-line-left.svg" alt="" />
+          <span>Voltar</span>
+        </a>
+      </nav>
+      <h1>Compras da Semana</h1>
+    </header>
+
+    <main class="container">
+      <div id="input-items" class="container">
+        <input
+          type="text"
+          name="newItem"
+          id="newItem"
+          placeholder="Adicione um novo item"
+        />
+        <a href="#">
+          <button class="bttn-add-item">Adicionar item</button>
+        </a>
+      </div>
+      <div id="items-list">
+        <fieldset>
+          <ul class="flex-column gap-12">
+            <li class="show-item">
+              <input type="checkbox" name="item01" id="item01" value="" />
+              <label class="checkbox" for="item01"></label>
+
+              <span>Pão de Forma</span>
+
+              <img src="./assets/icons/Frame-3.svg" alt="" />
+            </li>
+
+            <li class="show-item">
+              <input type="checkbox" name="item02" id="item02" value="" />
+              <label class="checkbox" for="item02"></label>
+
+              <span>Pão de Forma</span>
+
+              <img src="./assets/icons/Frame-3.svg" alt="" />
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </main>
+
+    <footer></footer>
+
     <script src="./script.js"></script>
   </body>
 </html>

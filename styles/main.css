@@ -1,0 +1,32 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 2rem;
+}
+
+#input-items {
+  padding: 0;
+}
+
+main input {
+  font: var(--text-lg);
+
+  padding: 1.1rem;
+  width: 100%;
+
+  border-color: var(--border-primary);
+  border-radius: 1.2rem;
+  outline: none;
+  background-color: var(--bg-secondary);
+  box-shadow: none;
+}
+
+main fieldset {
+  padding-top: 1.7rem;
+  border: none;
+}
+
+#item01 {
+  
+}
