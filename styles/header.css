@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: column;
 
-  padding-top: 7rem;
+  padding-top: 3rem;
 }
 
 header h1 {

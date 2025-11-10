@@ -1,0 +1,21 @@
+footer {
+  padding-block: 3.5rem;
+}
+
+.show-result {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  column-gap: 0.8rem;
+
+  font: var(--label-md);
+  color: var(--always-white);
+
+  background-color: var(--color-danger);
+
+  border-radius: 1.2rem;
+
+  & p {
+    flex: 1;
+  }
+}
