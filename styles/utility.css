@@ -29,6 +29,14 @@
   row-gap: 1.2rem;
 }
 
+#alert-icon {
+  filter: brightness(0) invert(1);
+}
+
+#delete-icon {
+  filter: brightness(0) invert(1);
+}
+
 .show-item {
   display: flex;
   flex-direction: row;
