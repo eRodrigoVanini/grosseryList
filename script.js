@@ -48,7 +48,10 @@ const li = createLi();
 
 function deleteItem() {
   const deleteBttn = document.getElementById("trashIcon");
+  const delAlert = document.getElementById("del-alert");
   deleteBttn.addEventListener("click", () => {
-    li.classList.remove("show-item");
+    li.remove();
+    delAlert.classList.remove("del-alert-hidden");
+    console.log(delAlert);
   });
 }
