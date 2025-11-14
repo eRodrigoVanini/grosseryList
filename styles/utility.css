@@ -87,6 +87,8 @@
 
   & img {
     flex-shrink: 0;
+
+    cursor: pointer;
   }
 
   & label {
@@ -149,5 +151,11 @@
 
   & input[type="checkbox"]:checked + label::after {
     opacity: 1;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    padding-inline: 370px;
   }
 }

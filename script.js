@@ -84,5 +84,5 @@ function displayAlert() {
 
   setTimeout(() => {
     delAlert.classList.add("del-alert-hidden");
-  }, 3000);
+  }, 1500);
 }
