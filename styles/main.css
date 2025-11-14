@@ -9,15 +9,15 @@ main {
   padding: 0;
 }
 
-main input {
+#newItem {
   font: var(--text-lg);
 
   padding: 1.1rem;
   width: 100%;
 
-  border-color: var(--border-primary);
-  border-radius: 1.2rem;
   outline: none;
+  border: 2px solid var(--border-primary);
+  border-radius: 1.2rem;
   background-color: var(--bg-secondary);
   box-shadow: none;
 }
@@ -25,4 +25,14 @@ main input {
 main fieldset {
   padding-top: 1.7rem;
   border: none;
+}
+
+#newItem:hover {
+  outline: none;
+  border: 0.2rem solid var(--border-hover);
+}
+
+#newItem:focus {
+  outline: none;
+  border: 0.2rem solid var(--color-brand);
 }
