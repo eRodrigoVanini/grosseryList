@@ -17,6 +17,11 @@ defaultItems.forEach((itemText) => {
   createItem(itemText);
 });
 
+//Define foco para o input
+window.addEventListener("DOMContentLoaded", () => {
+  newItem.focus();
+});
+
 //Ouve o botão add item
 bttnAddItem.addEventListener("click", () => {
   addItem();
