@@ -48,6 +48,7 @@
   background-color: var(--bg-secondary-color);
   border-radius: 1.2rem;
   flex-wrap: nowrap;
+  
 
   & input[type="checkbox"] {
     display: none;

@@ -48,10 +48,24 @@ const li = createLi();
 
 function deleteItem() {
   const deleteBttn = document.getElementById("trashIcon");
-  const delAlert = document.getElementById("del-alert");
+
   deleteBttn.addEventListener("click", () => {
     li.remove();
-    delAlert.classList.remove("del-alert-hidden");
-    console.log(delAlert);
+    displayAlert();
   });
+}
+
+function displayAlert() {
+  const delAlert = document.getElementById("del-alert");
+  const removeDelAlertIcon = document.getElementById("delete-alert-icon");
+
+  delAlert.classList.remove("del-alert-hidden");
+
+  removeDelAlertIcon.addEventListener("click", () => {
+    delAlert.remove();
+  });
+
+  setTimeout(() => {
+    delAlert.remove();
+  }, 3000);
 }
