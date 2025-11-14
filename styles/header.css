@@ -9,13 +9,23 @@ header h1 {
   font: var(--title-md);
 }
 
-header a {
+.backBttn {
   font: var(--link-md);
   color: var(--color-brand);
 
   display: flex;
-  align-items: center;
   column-gap: 0.5rem;
+  width: 57px;
+  height: 16px;
+
+  & span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  & img {
+    height: 100%;
+  }
 }
 
 @media (min-width: 80em) {
