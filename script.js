@@ -1,7 +1,7 @@
 //Capturar input de novo item
 const newItem = document.getElementById("newItem");
 //Capturar input de valor do item
-const newItemValue = document.getElementById("newItemValue");
+const newItemPrice = document.getElementById("newItemPrice");
 //Capturar botão de adicionar item
 //const bttnAddItem = document.getElementById("add-item");
 
@@ -16,13 +16,10 @@ const removeDelAlertIcon = document.getElementById("delete-alert-icon");
 //Itens padrão
 const defaultItems = ["Suco de Laranja", "Pão Integral", "Aveia em Flocos"];
 
-//Valores padrão
-const defaultItemsValues = ["R$ 3,50", "5,80", "3,25"];
-
 //Cria os itens padrão ao carregar a página
 let itemCounter = 0;
 defaultItems.forEach((itemText) => {
-  createItem(itemText);
+  createItem(itemText, "R$ 0,00");
 });
 
 //Define foco para o input
@@ -50,8 +47,16 @@ removeDelAlertIcon.addEventListener("click", () => {
 function getItemContent() {
   return newItem.value.trim();
 }
+
 function getItemValueContent() {
-  return newItemValue.value.trim();
+  const newItemPriceTrim = newItemPrice.value.trim();
+  const newItemPriceNumber = parseFloat(newItemPriceTrim.replace(",", "."));
+  const newItemFinalPrice = newItemPriceNumber.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+  console.log(`Passou aqui: ${newItemPriceTrim}`);
+  return newItemFinalPrice;
 }
 
 function isValidContent(content) {
@@ -70,7 +75,7 @@ function addItem() {
   //Cria o item e limpa o input
   createItem(content, contentValue);
   newItem.value = "";
-  newItemValue.value = "";
+  newItemPrice.value = "";
 }
 
 // Função reutilizável para criar itens
