@@ -1,0 +1,28 @@
+label {
+  font: var(--label-lg);
+  color: var(--content-secondary);
+}
+
+input {
+  font: var(--text-lg);
+
+  padding: 1.1rem;
+  width: 100%;
+
+  outline: none;
+  border: 2px solid var(--border-primary);
+  border-radius: 1.2rem;
+  background-color: var(--bg-secondary);
+  box-shadow: none;
+}
+
+input:hover {
+  outline: none;
+  border: 0.2rem solid var(--border-hover);
+}
+
+input:focus {
+  outline: none;
+  border: 0.2rem solid var(--color-brand);
+}
+

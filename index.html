@@ -20,62 +20,45 @@
           <span>Voltar</span>
         </a>
       </nav>
-      <h1>Compras da Semana</h1>
+      <h1>Lista de Compras</h1>
     </header>
 
     <main class="container">
-      <div id="input-items" class="container">
-        <input
-          type="text"
-          name="newItem"
-          id="newItem"
-          placeholder="Adicione um novo item"
-        />
-        <a href="#">
-          <button id="add-item" class="bttn-add-item" type="button">
-            Adicionar item
-          </button>
-        </a>
-      </div>
-      <fieldset>
-        <ul id="items-list" class="flex-column gap-12">
-          <!--<li class="show-item">
-            <input type="checkbox" name="item01" id="item01" value="" />
-            <label class="checkbox" for="item01"></label>
+      <form action="">
+        <fieldset class="new-item">
+          <legend>Itens</legend>
 
-            <span>Pão de Forma</span>
+          <div id="input-items" class="container input-wrapper">
+            <label for="newItem">Novo Item</label>
+            <input
+              type="text"
+              name="newItem"
+              id="newItem"
+              placeholder="Adicione um novo item"
+              required
+            />
+          </div>
+          <div id="input-items-value" class="container input-wrapper">
+            <label for="newItemValue">Valor</label>
+            <input
+              type="number"
+              name="newItemValue"
+              id="newItemValue"
+              placeholder="R$ 0,00"
+            />
+          </div>
 
-            <img src="./assets/icons/Frame-3.svg" alt="" />
-          </li>
+          <a href="#">
+            <button id="add-item" class="bttn-add-item" type="submit">
+              Adicionar item
+            </button>
+          </a>
 
-          <li class="show-item">
-            <input type="checkbox" name="item02" id="item02" value="" />
-            <label class="checkbox" for="item02"></label>
-
-            <span>Café Preto</span>
-
-            <img src="./assets/icons/Frame-3.svg" alt="" />
-          </li>
-
-          <li class="show-item">
-            <input type="checkbox" name="item02" id="item02" value="" />
-            <label class="checkbox" for="item02"></label>
-
-            <span>Suco de Laranja</span>
-
-            <img src="./assets/icons/Frame-3.svg" alt="" />
-          </li>
-
-          <li class="show-item">
-            <input type="checkbox" name="item02" id="item02" value="" />
-            <label class="checkbox" for="item02"></label>
-
-            <span>Bolacha</span>
-
-            <img src="./assets/icons/Frame-3.svg" alt="" />
-          </li>-->
-        </ul>
-      </fieldset>
+          <ul id="items-list" class="flex-column gap-12">
+            <p class="itemValue">R$ 3,50</p>
+          </ul>
+        </fieldset>
+      </form>
     </main>
 
     <footer class="container">

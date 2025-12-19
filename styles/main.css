@@ -5,34 +5,7 @@ main {
   padding-top: 2rem;
 }
 
-#input-items {
+#input-items,
+#input-items-value {
   padding: 0;
-}
-
-#newItem {
-  font: var(--text-lg);
-
-  padding: 1.1rem;
-  width: 100%;
-
-  outline: none;
-  border: 2px solid var(--border-primary);
-  border-radius: 1.2rem;
-  background-color: var(--bg-secondary);
-  box-shadow: none;
-}
-
-main fieldset {
-  padding-top: 1.7rem;
-  border: none;
-}
-
-#newItem:hover {
-  outline: none;
-  border: 0.2rem solid var(--border-hover);
-}
-
-#newItem:focus {
-  outline: none;
-  border: 0.2rem solid var(--color-brand);
 }
